@@ -1,0 +1,1 @@
+alert('Vamos testar a tag alert');
