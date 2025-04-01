@@ -16,17 +16,7 @@ Aqui você encontrará conteúdos sobre:
 - **Versionamento com Git e GitHub**
 - **Ferramentas de desenvolvimento web**
 
-## 📂 Estrutura do Repositório
 
-O repositório está organizado da seguinte forma:
-
-```
-📁 frontend-
-│── 📂 html-css       # Estudos de HTML e CSS
-│── 📂 javascript     # Exercícios e projetos com JS
-│── 📂 desafios       # Desafios e projetos práticos
-└── README.md         # Documentação do repositório
-```
 
 ## 📖 Fontes de Estudo
 
