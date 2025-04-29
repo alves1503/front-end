@@ -9,7 +9,7 @@
 
         div.container {
             display: flex;
-            flex-flow: row wrap;
+            flex-flow: row nowrap;
             background-color: brown;
 
         }
@@ -17,9 +17,10 @@
         div.item {
             background-color: blue;
             border: 1px solid black;
+            flex-basis: 250px;
             text-align: center;
-            flex-basis: auto;
-
+            flex-shrink: 1;
+            flex-basis: 1;
         }
     </style>
 </head>
@@ -30,10 +31,6 @@
         <div class="item">A</div>
         <div class="item">B</div>
         <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
         
 
     </div>
