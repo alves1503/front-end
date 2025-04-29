@@ -3,16 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=q, initial-scale=1.0">
-    <title>Flexbox</title>
+    <title>Flexible box</title>
     
     <style>
 
         div.container {
             display: flex;
-            background-color: brown;
             flex-flow: row wrap;
-            height: 400px;
-            align-items: self-start;
+            background-color: brown;
 
         }
 
@@ -20,12 +18,8 @@
             background-color: blue;
             border: 1px solid black;
             text-align: center;
-            padding: 20px;
-        }
+            flex-basis: auto;
 
-        div#i1 {
-            align-self: stretch
-            ;
         }
     </style>
 </head>
@@ -33,15 +27,17 @@
     
 
     <div class="container">
-        <div class="item" id="i1">A</div>
+        <div class="item">A</div>
         <div class="item">B</div>
         <div class="item">C</div>
         <div class="item">D</div>
         <div class="item">E</div>
         <div class="item">F</div>
         <div class="item">G</div>
+        
 
     </div>
+
 
 </body>
 </html>
