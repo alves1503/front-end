@@ -1,64 +1,61 @@
-@charset "UTF-8";
+@charset "UTF-8"; /* Define a codificação como UTF-8 */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove preenchimentos padrão */
+    box-sizing: border-box; /* Inclui padding e borda dentro da largura/altura do elemento */
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    background-color: lightgrey;
-    height: 100vh;
-    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif; /* Fonte usada na página */
+    font-size: 1em; /* Tamanho base da fonte */
+    background-color: lightgrey; /* Cor de fundo do corpo da página */
+    height: 100vh; /* Altura da viewport inteira */
+    width: 100vw; /* Largura da viewport inteira */
 }
 
 header {
-    background-color: gray;
-    color: white;
-    padding: 10px;
+    background-color: gray; /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno */
 
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Ativa o Flexbox */
+    flex-flow: row wrap; /* Direção da linha e permite quebra em várias linhas */
+    justify-content: space-between; /* Espaça os itens igualmente */
+    align-items: center; /* Alinha os itens ao centro na vertical */
 }
 
-header>h1 {
-    border: 1px dotted black;
-    flex: 0 0 200px;
+header > h1 {
+    flex: 0 0 200px; /* Tamanho fixo de 200px no flex */
+    text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.37); /* Sombra no texto */
 }
 
-header>nav {
-    border: 1px dotted black;
-
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-end;
+header > nav {
+    display: flex; /* Flexbox também na navegação */
+    flex-flow: row wrap; /* Direção e quebra de linha */
+    justify-content: flex-end; /* Alinha os links ao final da linha */
 }
 
-header>nav>a {
-    background-color: black;
-    color: white;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
-    text-decoration: none;
-    text-align: center;
+header > nav > a {
+    background-color: black; /* Fundo dos botões de navegação */
+    color: white; /* Cor do texto */
+    padding: 10px; /* Espaçamento interno */
+    margin: 5px; /* Espaço externo entre os links */
+    border-radius: 5px; /* Cantos arredondados */
+    text-decoration: none; /* Remove sublinhado dos links */
+    text-align: center; /* Centraliza o texto */
 }
 
-header>nav>a:hover {
-    background-color: white;
-    color: black;
-    transition: background-color .5s;
+header > nav > a:hover {
+    background-color: white; /* Cor de fundo ao passar o mouse */
+    color: black; /* Cor do texto ao passar o mouse */
+    transition: background-color .5s; /* Suaviza a transição da cor de fundo */
 }
 
 main {
-    background-color: white;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.259);
+    background-color: white; /* Fundo branco para o conteúdo */
+    margin: 10px; /* Espaço externo */
+    padding: 10px; /* Espaço interno */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.259); /* Sombra leve ao redor da caixa */
 }

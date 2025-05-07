@@ -1,0 +1,16 @@
+@charset "UTF-8"; /* Define a codificação como UTF-8 */
+
+/* Estilos aplicados em telas com largura de até 580px */
+
+header,
+header > nav {
+    flex-flow: column nowrap; /* Empilha os elementos verticalmente, sem quebra de linha */
+}
+
+header > h1 {
+    flex-basis: 50px; /* Altura básica de 50px para o h1 */
+}
+
+header > nav > a {
+    width: 95vw; /* Os links ocupam quase toda a largura da tela */
+}
