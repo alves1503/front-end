@@ -1,1 +1,2 @@
-alert('Ola mundo')
+prompt('Seu nome')
+confirm('Tudo bem?')
