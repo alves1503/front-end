@@ -1,27 +1,73 @@
-@charset "UTF-8";
+@charset "UTF-8"; /* Define o conjunto de caracteres como UTF-8 */
 
+/* Reset básico para remover margens e preenchimentos padrão */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilo padrão do corpo da página */
 body  {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1em;
-    line-height: 1.5em;
+    font-family: Arial, Helvetica, sans-serif; /* Fonte padrão */
+    font-size: 1em; /* Tamanho padrão da fonte */
+    line-height: 1.5em; /* Espaçamento entre linhas */
 }
 
+/* Espaçamento e alinhamento de parágrafos e títulos */
 p, h1, h2 {
     margin-bottom: 10px;
-    text-align: justify;
+    text-align: justify; /* Justifica o texto */
 }
 
+/* Espaçamento interno para header e seções comuns */
 header, section.normal {
     padding: 20px;
 }
 
+/* Estilo da seção com conteúdo flexível */
 section.flex-content {
+    display: flex; /* Ativa o flexbox */
+    flex-flow: column nowrap; /* Direção em coluna, sem quebra */
     padding: 20px;
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(180, 180, 180); /* Cor de fundo */
+}
+
+/* Artigo com mídia à esquerda e texto à direita */
+article.text-media {
+    display: flex;
+    flex-flow: row wrap; /* Linha com quebra permitida */
+    justify-content: space-between; /* Espaço entre os elementos */
+}
+
+/* Artigo com texto à esquerda e mídia à direita (invertido) */
+article.media-text {
+    display: flex;
+    flex-flow: row wrap-reverse; /* Linha com ordem reversa */
+    justify-content: space-between;
+}
+
+/* Div de texto ocupa 500px ou mais se necessário */
+article > div.text {
+    flex: 1 1 500px; /* Cresce e encolhe com mínimo de 500px */
+}
+
+/* Div de mídia ocupa 500px fixos e não encolhe */
+article > div.media {
+    flex: 1 0 500px; /* Cresce, não encolhe, mínimo 500px */
+}
+
+/* Estilização das imagens */
+div.media > img {
+    display: block; /* Remove espaços extras abaixo da imagem */
+    margin: auto; /* Centraliza a imagem */
+    width: 300px; /* Largura fixa */
+    padding: 10px; /* Espaço interno */
+}
+
+/* Estilização dos vídeos incorporados */
+div.media > iframe {
+    display: block;
+    margin: auto;
+    width: 90%; /* Quase largura total do contêiner */
 }
