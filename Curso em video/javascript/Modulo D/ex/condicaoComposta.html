@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condição compostas</title>
+</head>
+
+<body>
+
+    <h1>Seu pais de origem</h1>
+    Qual seu país de origem? <input type="text" name="txttext" id="txttext">
+    <input type="button" value="Enviar" onclick="calcular()">
+
+    <div id="res">
+
+    </div>
+
+    <script>
+
+        function calcular() {
+            var txtv = document.querySelector('#txttext')
+            var res = document.querySelector('div#res')
+
+            var resp = txtv.value
+
+            res.innerHTML = `Seu país de origem é: ${txtv.value}`
+
+            if (resp == 'Brasil') {
+                res.innerHTML += `<p>Você é Brasileiro</p>`
+            } else {
+                res.innerHTML += `<p>Você é Estrangeiro</p>`
+            }
+
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
