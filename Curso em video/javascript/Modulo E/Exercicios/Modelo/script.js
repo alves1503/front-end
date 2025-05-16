@@ -7,8 +7,10 @@ function contar() {
     var i = Number(inicio.value)
     var f = Number(fim.value)
     var p = Number(passo.value)
-
     if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
+        if (p <= 0) {
+            alert('Você não prencheu o input de passo')
+        }
         alert('Dados incorretos, tente novamente')
     } else if (i < f) {
         res.innerHTML = 'Contando: '
