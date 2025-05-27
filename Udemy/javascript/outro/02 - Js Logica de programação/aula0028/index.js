@@ -16,3 +16,5 @@ function formatData (data) {
 const data = new Date();
 const dataBrasil = formatData(data) ;
 console.log(dataBrasil);
+
+console.log('Teste')
