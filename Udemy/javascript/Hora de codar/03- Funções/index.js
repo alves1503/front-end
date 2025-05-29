@@ -84,3 +84,9 @@ const parImpar = (n) => {
 
 parImpar (5)
 parImpar (10)
+
+
+// 06- MAIS SOBRE ARROW FUNCTIOM
+const raizQuadrada = (x) => x * x;
+console.log(raizQuadrada(12))
+console.log(raizQuadrada(5))
