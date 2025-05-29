@@ -31,3 +31,13 @@ const text = 'alves'
 
 console.log(text.toUpperCase())
 console.log(text.indexOf('a'))
+
+
+// 05- OBJETOS
+const person = {
+    name: 'Henrique',
+    age: 20,
+    job: 'Desenvolvedor'
+}
+
+console.log(person.job)
