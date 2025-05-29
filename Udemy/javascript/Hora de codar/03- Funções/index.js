@@ -30,3 +30,15 @@ function somaValores (a,b) {
 
 const res = somaValores(a,b)
 console.log(res)
+
+// 03- ESCOPO DA FUNÇÃO
+let y = 20
+
+function testandoEscopo () {
+    let y = 30
+    console.log(`Y dentro da função é: ${y}`)
+}
+
+testandoEscopo()
+
+console.log(`Y fora da função é: ${y}`)
