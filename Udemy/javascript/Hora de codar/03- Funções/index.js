@@ -1,18 +1,18 @@
 // 01- CRINDO UMA FUNÇÃO
-function teste () {
+function teste() {
     console.log('Teste')
 }
 
 teste() // Chama a  função 
 
 //Chama em variavel
-const minhaFun = function() {
+const minhaFun = function () {
     console.log("Função em variavel")
 }
 minhaFun()
 
 // Criando função com parametro
-function comParametro (txt) {
+function comParametro(txt) {
     console.log(`Impreimindo : ${txt}`)
 }
 comParametro("Imprimindo algo")
@@ -24,17 +24,19 @@ const b = 20
 const c = 10
 const d = 25
 
-function somaValores (a,b) {
+function somaValores(a, b) {
     return a + b
 }
 
-const res = somaValores(a,b)
+const res = somaValores(a, b)
 console.log(res)
+
+
 
 // 03- ESCOPO DA FUNÇÃO
 let y = 20
 
-function testandoEscopo () {
+function testandoEscopo() {
     let y = 30
     console.log(`Y dentro da função é: ${y}`)
 }
@@ -42,3 +44,24 @@ function testandoEscopo () {
 testandoEscopo()
 
 console.log(`Y fora da função é: ${y}`)
+
+
+// 04- ESCOPO ALINHADO
+let m = 10
+
+function escopoAlinhado() {
+    let m = 20
+
+    if (true) {
+        let m = 30
+        if (true) {
+            let m = 40
+            console.log(m)
+        }
+        console.log(m)
+    }
+    console.log(m)
+}
+
+escopoAlinhado()
+console.log(m)
