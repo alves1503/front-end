@@ -41,3 +41,37 @@ const person = {
 }
 
 console.log(person.job)
+
+// 06- CRINDO E DELETANDO PROPRIEDADES
+const car = {
+    model: 'Gol',
+    age: 2020,
+    engine: 1.8,
+    km: 10000,
+}
+
+console.log(car)
+
+car.doors = 'Teste' // adiciona a propriedade
+
+console.log(car)
+
+delete car.km //Deleta propriedade
+console.log(car)
+
+
+// 07- MAIS SOBRE OBJETOS
+const obj = {
+    a: 'teste',
+    b: Boolean,
+}
+
+console.log(obj instanceof Object)
+
+
+const obj2 = {
+    c: [],
+}
+
+Object.assign(obj2,obj)
+console.log(obj2)
