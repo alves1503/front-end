@@ -117,7 +117,7 @@ repeatText("O numero foi repetido", 5)
 
 // 09- CLOSURE
 function someFunction() {
-    let txt =  'Alguma coisa'
+    let txt = 'Alguma coisa'
 
     function display() {
         console.log(txt)
@@ -128,3 +128,20 @@ function someFunction() {
 }
 
 someFunction()
+
+
+// 10- MAIS SOBRE CLOSURE
+    const multipplicacao = (n) => {
+        return(m) => {
+            return n * m
+        }
+    }
+
+    const c1 = multipplicacao(5)
+
+    const c2 = multipplicacao(10)
+
+
+
+    console.log(c1(5))
+    console.log(c2(10))
