@@ -90,3 +90,18 @@ parImpar (10)
 const raizQuadrada = (x) => x * x;
 console.log(raizQuadrada(12))
 console.log(raizQuadrada(5))
+
+
+
+
+// 07- ARGUMENTOS OPCIONAIS
+const saudacao = (name1) => {
+    if (!name1) {
+        console.log('Ola')
+        return
+    }
+    console.log(`Olá ${name1}`)
+}
+
+saudacao()
+saudacao("Henrique")
