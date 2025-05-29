@@ -104,3 +104,10 @@ console.log(b)
 delete b.age
 console.log(a)
 console.log(b)
+
+// 10- LOOP EM ARRAY    
+const users = ['Alves', 'Souza', 'Oliveira']
+
+for (let i = 0; i < users.length; i++) {
+    console.log(users[i])
+}
