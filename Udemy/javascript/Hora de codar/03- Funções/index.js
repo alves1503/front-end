@@ -65,3 +65,22 @@ function escopoAlinhado() {
 
 escopoAlinhado()
 console.log(m)
+
+
+// 05- ARROW FUNCTION
+const testArrow = () => {
+    console.log('Está é uma arrow function')
+}
+
+testArrow()
+
+const parImpar = (n) => {
+    if (n % 2 === 0) {
+        console.log('Par')
+        return
+    }
+    console.log('Impar')
+}
+
+parImpar (5)
+parImpar (10)
