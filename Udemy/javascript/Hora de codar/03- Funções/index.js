@@ -82,8 +82,8 @@ const parImpar = (n) => {
     console.log('Impar')
 }
 
-parImpar (5)
-parImpar (10)
+parImpar(5)
+parImpar(10)
 
 
 // 06- MAIS SOBRE ARROW FUNCTIOM
@@ -105,3 +105,12 @@ const saudacao = (name1) => {
 
 saudacao()
 saudacao("Henrique")
+
+// 08- AARGUMENTO DEFAULT
+const repeatText = (text, repeat = 2) => {
+    for (let i = 0; i < repeat; i++) {
+        console.log(text)
+    }
+}
+
+repeatText("O numero foi repetido", 5)
