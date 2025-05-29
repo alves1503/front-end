@@ -106,7 +106,7 @@ const saudacao = (name1) => {
 saudacao()
 saudacao("Henrique")
 
-// 08- AARGUMENTO DEFAULT
+// 08- ARGUMENTO DEFAULT
 const repeatText = (text, repeat = 2) => {
     for (let i = 0; i < repeat; i++) {
         console.log(text)
@@ -114,3 +114,17 @@ const repeatText = (text, repeat = 2) => {
 }
 
 repeatText("O numero foi repetido", 5)
+
+// 09- CLOSURE
+function someFunction() {
+    let txt =  'Alguma coisa'
+
+    function display() {
+        console.log(txt)
+    }
+
+
+    display()
+}
+
+someFunction()
