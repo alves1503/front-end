@@ -18,3 +18,16 @@ console.log(numbers["length"])
 const myName = 'Henrique'
 
 console.log(myName.length)
+
+
+// 04- METODOS 
+const otherNumber = [1, 2, 3]
+const allNumbers = numbers.concat(otherNumber)
+
+console.log(allNumbers)
+
+
+const text = 'alves'
+
+console.log(text.toUpperCase())
+console.log(text.indexOf('a'))
