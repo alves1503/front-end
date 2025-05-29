@@ -145,3 +145,17 @@ someFunction()
 
     console.log(c1(5))
     console.log(c2(10))
+
+
+    // 01- RECURSION
+    const recursao = (n,m) => {
+        if (n < 10) {
+            console.log('A função parou!')
+        } else {
+            const x = n - m
+            console.log(x)
+            recursao(x,m)
+        }
+    }
+
+    recursao(100,7)
