@@ -1,4 +1,4 @@
-/* // 01-  ARRAYS
+ // 01-  ARRAYS
 const list = [1, 2, 3, 4, 5]
 
 console.log(list)
@@ -138,9 +138,9 @@ console.log(letter)
 console.log(letters)
 
 letters.unshift =('Add', 'Ttt')
-console.log(letters) */
+console.log(letters) 
 
-/* // 12- INDEXOF E LASTINDEXOF
+// 12- INDEXOF E LASTINDEXOF
 const myElements = ['Abacate', 'Pera', 'Uva', 'Abacate']
 
 console.log(myElements.indexOf('Pera'))
@@ -201,7 +201,7 @@ const reverseTest = [1, 2, 3, 4, 5]
 
 reverseTest.reverse()
 
-console.log(reverseTest) */
+console.log(reverseTest) 
 
 // 18- TRIM
 
@@ -301,3 +301,20 @@ const myJson =
 '{"name": "Henrique", "age": 20, "skills": ["Php","Node.js","JavaScript"]}'
 console.log(myJson)
 console.log(typeof myJson)
+
+// 28- CONVERSÃO DE JSON
+const myObject = JSON.parse(myJson)
+
+console.log(myObject)
+
+console.log(myObject.name)
+
+console.log(typeof myObject)
+
+
+
+const myNewJson = JSON.stringify(myObject)
+
+console.log(myNewJson)
+
+console.log(typeof myNewJson)
