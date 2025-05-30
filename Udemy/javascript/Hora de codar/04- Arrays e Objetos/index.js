@@ -1,5 +1,5 @@
 // 01-  ARRAYS
-const list = [1, 2, 3, 4, 5]    
+const list = [1, 2, 3, 4, 5]
 
 console.log(list)
 
@@ -73,7 +73,7 @@ const obj2 = {
     c: [],
 }
 
-Object.assign(obj2,obj)
+Object.assign(obj2, obj)
 console.log(obj2)
 
 // 08- CONHECENDO MELHOR OS OBJETOS 
