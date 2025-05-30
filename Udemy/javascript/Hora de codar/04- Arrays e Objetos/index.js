@@ -294,3 +294,10 @@ const myList = ['Carros', 'Motos']
 
 const [veiA, veiB] = myList
 console.log(veiA,veiB)
+
+
+// 27- JSON
+const myJson =
+'{"name": "Henrique", "age": 20, "skills": ["Php","Node.js","JavaScript"]}'
+console.log(myJson)
+console.log(typeof myJson)
