@@ -195,3 +195,10 @@ console.log(brands.includes("Kia")) //flase
 if (brands.includes('BMW')) {
     console.log('Há carros da marca BMW')
 }
+
+// 17- REVERSE 
+const reverseTest = [1, 2, 3, 4, 5]
+
+reverseTest.reverse()
+
+console.log(reverseTest)
