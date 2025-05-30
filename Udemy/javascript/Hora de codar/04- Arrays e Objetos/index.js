@@ -167,3 +167,21 @@ console.log(subArray3)
 
 const subArray4 = testSlice.slice(2)
 console.log(subArray4)
+
+
+// 15- FOREACH 
+const num = [1, 2, 3, 4, 5]
+
+num.forEach((numero) => {
+    console.log(`O número é: ${numero}`)
+})
+
+const post = [
+    {title: 'Primeiro post', category: 'Php'},
+    {title: 'Segundo post', category: 'Javascript'},
+    {title: 'Terceiro post', category: 'Java'},
+]
+
+post.forEach((post) => {
+    console.log(`Exibindo post ${post.title} da categoria ${post.category}`)
+})
