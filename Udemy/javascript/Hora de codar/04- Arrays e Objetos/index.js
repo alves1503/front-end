@@ -272,3 +272,18 @@ const somaInfinita = (...args) => {
 }
 
 console.log(somaInfinita(1, 200, 3))
+
+
+// 25- DESTRUCTURING EM OBJETOS
+const userNames = {
+    name:'Henrique',
+    lastName:'Alves',
+    job: 'Student'
+}
+
+const {name, lastName, job} = userNames
+console.log(name, lastName, job)
+
+//renomear
+const {name: primeiroNome} = userNames
+console.log(name)
