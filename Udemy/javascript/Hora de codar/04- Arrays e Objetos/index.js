@@ -240,3 +240,22 @@ console.log(arrayDaFrase)
 // 21- JOIN
 const fraseDeNovo = arrayDaFrase.join(' ')
 console.log(fraseDeNovo)
+
+// 22- REPEAT
+const rep = 'Testando'
+
+console.log(rep.repeat(8))
+
+// 23- REST OPERATOR
+const restOp = (...args) => {
+
+    let total = 0 
+    for (let i = 0; i < args.length; i++) {
+        total += args[i]
+    }
+
+    return total
+
+}
+
+console.log(restOp(1, 20, 3))
