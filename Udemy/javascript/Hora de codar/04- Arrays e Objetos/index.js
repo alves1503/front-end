@@ -159,10 +159,10 @@ const subArray = testSlice.slice(2, 4)
 console.log(subArray)
 console.log(testSlice)
 
-const subArray2 = testSlice.slice(2,4 + 1)
+const subArray2 = testSlice.slice(2, 4 + 1)
 console.log(subArray2)
 
-const subArray3 = testSlice.slice(10,20)
+const subArray3 = testSlice.slice(10, 20)
 console.log(subArray3)
 
 const subArray4 = testSlice.slice(2)
@@ -177,11 +177,21 @@ num.forEach((numero) => {
 })
 
 const post = [
-    {title: 'Primeiro post', category: 'Php'},
-    {title: 'Segundo post', category: 'Javascript'},
-    {title: 'Terceiro post', category: 'Java'},
+    { title: 'Primeiro post', category: 'Php' },
+    { title: 'Segundo post', category: 'Javascript' },
+    { title: 'Terceiro post', category: 'Java' },
 ]
 
 post.forEach((post) => {
     console.log(`Exibindo post ${post.title} da categoria ${post.category}`)
 })
+
+// 16- INCLUDES 
+const brands = ['BMW', 'Gol']
+
+console.log(brands.includes('Gol')) //true
+console.log(brands.includes("Kia")) //flase
+
+if (brands.includes('BMW')) {
+    console.log('Há carros da marca BMW')
+}
