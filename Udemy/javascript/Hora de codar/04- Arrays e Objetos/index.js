@@ -220,7 +220,7 @@ console.log(trimTeste.trim().length)
 // 19- PADSTART
 const testPadStart = '1'
 
-const newNumber = testPadStart.padStart(4,'0')
+const newNumber = testPadStart.padStart(4, '0')
 
 console.log(testPadStart)
 
@@ -249,7 +249,7 @@ console.log(rep.repeat(8))
 // 23- REST OPERATOR
 const restOp = (...args) => {
 
-    let total = 0 
+    let total = 0
     for (let i = 0; i < args.length; i++) {
         total += args[i]
     }
@@ -259,3 +259,16 @@ const restOp = (...args) => {
 }
 
 console.log(restOp(1, 20, 3))
+
+
+// 24- FOR OF
+const somaInfinita = (...args) => {
+
+    let total1 = 0
+    for (num of args) {
+        total1 += num
+    }
+    return total1
+}
+
+console.log(somaInfinita(1, 200, 3))
