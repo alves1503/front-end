@@ -229,3 +229,10 @@ console.log(newNumber)
 const testPadEnd = newNumber.padEnd(10, '0')
 
 console.log(testPadEnd)
+
+
+// 20- SPLIT    
+const frase = 'O rato roeu a roupa do rei de Roma'
+
+const arrayDaFrase = frase.split(' ')
+console.log(arrayDaFrase)
