@@ -111,3 +111,20 @@ const users = ['Alves', 'Souza', 'Oliveira']
 for (let i = 0; i < users.length; i++) {
     console.log(users[i])
 }
+
+// 11- PUSH E POP
+const array = ['a', 'b', 'c']
+
+array.push('d')
+console.log(array)
+console.log(array.length)
+
+array.pop()
+
+console.log(array)
+
+const itemRemovido = array.pop()
+
+console.log(itemRemovido)
+
+console.log(array)
