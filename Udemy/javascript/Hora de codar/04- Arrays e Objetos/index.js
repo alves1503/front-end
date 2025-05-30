@@ -1,4 +1,4 @@
-// 01-  ARRAYS
+/* // 01-  ARRAYS
 const list = [1, 2, 3, 4, 5]
 
 console.log(list)
@@ -138,7 +138,7 @@ console.log(letter)
 console.log(letters)
 
 letters.unshift =('Add', 'Ttt')
-console.log(letters)
+console.log(letters) */
 
 // 12- INDEXOF E LASTINDEXOF
 const myElements = ['Abacate', 'Pera', 'Uva', 'Abacate']
@@ -151,3 +151,19 @@ console.log(myElements[0])
 console.log(myElements[myElements.indexOf('Abacate')])
 
 console.log(myElements.lastIndexOf('Abacate'))
+
+// 14- SLICE
+const testSlice = ['a', 'b', 'c', 'd', 'e']
+const subArray = testSlice.slice(2, 4)
+
+console.log(subArray)
+console.log(testSlice)
+
+const subArray2 = testSlice.slice(2,4 + 1)
+console.log(subArray2)
+
+const subArray3 = testSlice.slice(10,20)
+console.log(subArray3)
+
+const subArray4 = testSlice.slice(2)
+console.log(subArray4)
