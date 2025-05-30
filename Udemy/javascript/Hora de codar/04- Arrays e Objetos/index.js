@@ -287,3 +287,10 @@ console.log(name, lastName, job)
 //renomear
 const {name: primeiroNome} = userNames
 console.log(name)
+
+
+// 26- DESTRUCTURING EM ARRAYS
+const myList = ['Carros', 'Motos']
+
+const [veiA, veiB] = myList
+console.log(veiA,veiB)
