@@ -128,3 +128,14 @@ const itemRemovido = array.pop()
 console.log(itemRemovido)
 
 console.log(array)
+
+// 11- SHIIFT E UNSHIFT
+
+
+const letters = ['a', 'b', 'c']
+const letter = letters.shift()
+console.log(letter)
+console.log(letters)
+
+letters.unshift =('Add', 'Ttt')
+console.log(letters)
