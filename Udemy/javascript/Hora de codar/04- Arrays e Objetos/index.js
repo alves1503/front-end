@@ -139,3 +139,15 @@ console.log(letters)
 
 letters.unshift =('Add', 'Ttt')
 console.log(letters)
+
+// 12- INDEXOF E LASTINDEXOF
+const myElements = ['Abacate', 'Pera', 'Uva', 'Abacate']
+
+console.log(myElements.indexOf('Pera'))
+console.log(myElements.indexOf('Abacate'))
+
+
+console.log(myElements[0])
+console.log(myElements[myElements.indexOf('Abacate')])
+
+console.log(myElements.lastIndexOf('Abacate'))
