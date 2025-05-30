@@ -140,7 +140,7 @@ console.log(letters)
 letters.unshift =('Add', 'Ttt')
 console.log(letters) */
 
-// 12- INDEXOF E LASTINDEXOF
+/* // 12- INDEXOF E LASTINDEXOF
 const myElements = ['Abacate', 'Pera', 'Uva', 'Abacate']
 
 console.log(myElements.indexOf('Pera'))
@@ -201,4 +201,31 @@ const reverseTest = [1, 2, 3, 4, 5]
 
 reverseTest.reverse()
 
-console.log(reverseTest)
+console.log(reverseTest) */
+
+// 18- TRIM
+
+const trimTeste = '     Testando \n'
+
+console.log(trimTeste)
+
+console.log(trimTeste.trim())
+
+console.log(trimTeste.length)
+
+console.log(trimTeste.trim().length)
+
+
+
+// 19- PADSTART
+const testPadStart = '1'
+
+const newNumber = testPadStart.padStart(4,'0')
+
+console.log(testPadStart)
+
+console.log(newNumber)
+
+const testPadEnd = newNumber.padEnd(10, '0')
+
+console.log(testPadEnd)
