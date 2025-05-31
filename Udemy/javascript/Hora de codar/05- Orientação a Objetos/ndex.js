@@ -100,3 +100,11 @@ function Cachorro(nome, raca) {
 const pintcher = new Cachorro('Micky', 'Pintcher')
 
 console.log(pintcher)
+
+
+// 08- METODOS NA FUNÇÃO CONSTRUTORA
+Cachorro.prototype.uivar = function() {
+    console.log('AUUUUUUUUUUUUUU!')
+}
+
+pintcher.uivar()
