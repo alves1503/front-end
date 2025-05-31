@@ -57,3 +57,15 @@ const mySecondObject = Object.create(myObjrct)
 
 console.log(mySecondObject)
 console.log(mySecondObject.a)
+
+// 05- CLASSES BASICAS 
+const cachorro = {
+    raca: null,
+    patas: 4
+}
+
+const pastorAlemao = Object.create(cachorro)
+pastorAlemao.raca = 'Pastor Alemão'
+
+console.log(pastorAlemao)
+console.log(pastorAlemao.patas)
