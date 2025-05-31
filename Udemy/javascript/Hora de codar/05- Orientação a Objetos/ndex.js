@@ -41,3 +41,19 @@ console.log(Object.getPrototypeOf(text))
 
 const boll = true
 console.log(Object.getPrototypeOf(boll))
+
+
+// 04- MAIS SOBRE PROTOTYPES
+const myObjrct = {
+    a: 'b',
+}
+
+console.log(Object.getPrototypeOf(myObjrct))
+
+console.log
+(Object.getPrototypeOf(myObjrct) === Object.prototype)
+
+const mySecondObject = Object.create(myObjrct)
+
+console.log(mySecondObject)
+console.log(mySecondObject.a)
