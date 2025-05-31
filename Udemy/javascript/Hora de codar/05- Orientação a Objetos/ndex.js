@@ -113,10 +113,27 @@ pintcher.uivar()
 // 09- CLASSES ES6
 class ChachorroClasse {
     constructor(nome, raca) {
-        this.nomenome = nome
+        this.nome = nome
         this.raca = raca
     }
 }
 
 const jeff = new ChachorroClasse('Jeff', 'Labrador')
 console.log(jeff)
+
+
+// 10- MAIS SOBRE  CLASSES
+class Caminhao {
+    constructor (eixo, cor) {
+        this.eixo = eixo
+        this.cor = cor
+    }
+
+    descreverCaminhao() {
+        console.log(`Este caminhão tem ${this.eixo} eixos e é da cor ${this.cor}`)
+    }
+}
+
+const scania = new Caminhao(6, 'Azul')
+console.log(scania)
+scania.descreverCaminhao()
