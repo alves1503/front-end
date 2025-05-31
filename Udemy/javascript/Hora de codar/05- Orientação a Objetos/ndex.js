@@ -89,3 +89,14 @@ const marlom = criarCachorro('Marlom', 'Buldog')
 
 console.log(bob)
 console.log(marlom)
+
+
+// 07- FUNÇÕES COMO CLASSES 
+function Cachorro(nome, raca) {
+    this.nome = nome
+    this.raca = raca
+}
+
+const pintcher = new Cachorro('Micky', 'Pintcher')
+
+console.log(pintcher)
