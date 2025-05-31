@@ -137,3 +137,22 @@ class Caminhao {
 const scania = new Caminhao(6, 'Azul')
 console.log(scania)
 scania.descreverCaminhao()
+
+
+
+// 11- OVERRIDE
+    class Humano {
+        constructor (nome,idade) {
+            this.nome = nome
+            this.idade = idade
+        }
+    }
+
+    const henrique = new Humano('Henrique', 20)
+    console.log(henrique)
+
+    Humano.prototype.idade = 'Não definida'
+
+    console.log(henrique.idade)
+
+    console.log(Humano.prototype.idade)
