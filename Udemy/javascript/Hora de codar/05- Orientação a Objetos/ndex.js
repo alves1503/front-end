@@ -32,3 +32,12 @@ console.log(pessoa.getNome())
 pessoa.setNome('Joaquim')
 
 console.log(pessoa.getNome())
+
+
+// 03- PROTOTYPES
+const text = 'Add'
+console.log(Object.getPrototypeOf(text))
+
+
+const boll = true
+console.log(Object.getPrototypeOf(boll))
