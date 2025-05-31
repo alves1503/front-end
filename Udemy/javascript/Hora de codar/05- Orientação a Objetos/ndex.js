@@ -69,3 +69,23 @@ pastorAlemao.raca = 'Pastor Alemão'
 
 console.log(pastorAlemao)
 console.log(pastorAlemao.patas) 
+
+// 06- FUNÇÃO COMO CLASSES - FUNÇÃO CONSTRUTORA
+function criarCachorro(nome, raca) {
+
+    const dog = Object.create({})
+
+    dog.nome = nome
+    dog.raca = raca
+
+
+    return dog
+
+}
+
+
+const bob = criarCachorro('Bob', 'Vira lata')
+const marlom = criarCachorro('Marlom', 'Buldog')
+
+console.log(bob)
+console.log(marlom)
