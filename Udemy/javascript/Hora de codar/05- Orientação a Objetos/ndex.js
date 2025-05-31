@@ -157,19 +157,46 @@ scania.descreverCaminhao()
 
     console.log(Humano.prototype.idade) */
 
-    //SYMBOL
-    class Aviao {
-        constructor(marcas, turbinas) {
-            this.marcas = marcas
-            this.turbinas = turbinas
-        }
+//SYMBOL
+class Aviao {
+    constructor(marcas, turbinas) {
+        this.marcas = marcas
+        this.turbinas = turbinas
+    }
+}
+
+const asas = Symbol()
+
+Aviao.prototype[asas] = 2
+
+const boeing = new Aviao('Boeing', 10)
+console.log(boeing)
+
+console.log(boeing[asas])
+
+
+//GETTER E SETTER   
+class Post {
+    constructor(titulo, descricao, tags) {
+        this.titulo = titulo
+        this.descricao = descricao
+        this.tags = tags
     }
 
-    const asas =  Symbol() 
+    get exibirTitulo() {
+        return `Você está lendo ${this.titulo}`
+    }
 
-    Aviao.prototype[asas] = 2
+    set adicionarTags(tags) {
+        const tagsArray = tags.split (", ")
+        this.tags =  tagsArray
+    }
+}
 
-    const boeing = new Aviao('Boeing', 10)
-    console.log(boeing)
+const myPost = new Post('Algum post', 'É um post sobre programação')
 
-    console.log(boeing[asas])
+console.log(myPost)
+console.log(myPost.exibirTitulo)
+myPost.adicionarTags = 'programacao, javascript, post'
+
+console.log(myPost)
