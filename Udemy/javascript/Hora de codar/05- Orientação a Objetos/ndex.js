@@ -68,4 +68,4 @@ const pastorAlemao = Object.create(cachorro)
 pastorAlemao.raca = 'Pastor Alemão'
 
 console.log(pastorAlemao)
-console.log(pastorAlemao.patas)
+console.log(pastorAlemao.patas) 
