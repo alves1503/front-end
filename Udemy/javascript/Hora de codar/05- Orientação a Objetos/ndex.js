@@ -19,7 +19,7 @@ const pessoa = {
         return this.nome
     },
 
-        setNome: function (novoNome) {
+    setNome: function (novoNome) {
         this.nome = novoNome
     }
 }
@@ -51,7 +51,7 @@ const myObjrct = {
 console.log(Object.getPrototypeOf(myObjrct))
 
 console.log
-(Object.getPrototypeOf(myObjrct) === Object.prototype)
+    (Object.getPrototypeOf(myObjrct) === Object.prototype)
 
 const mySecondObject = Object.create(myObjrct)
 
@@ -68,7 +68,7 @@ const pastorAlemao = Object.create(cachorro)
 pastorAlemao.raca = 'Pastor Alemão'
 
 console.log(pastorAlemao)
-console.log(pastorAlemao.patas) 
+console.log(pastorAlemao.patas)
 
 // 06- FUNÇÃO COMO CLASSES - FUNÇÃO CONSTRUTORA
 function criarCachorro(nome, raca) {
@@ -103,8 +103,20 @@ console.log(pintcher)
 
 
 // 08- METODOS NA FUNÇÃO CONSTRUTORA
-Cachorro.prototype.uivar = function() {
+Cachorro.prototype.uivar = function () {
     console.log('AUUUUUUUUUUUUUU!')
 }
 
 pintcher.uivar()
+
+
+// 09- CLASSES ES6
+class ChachorroClasse {
+    constructor(nome, raca) {
+        this.nomenome = nome
+        this.raca = raca
+    }
+}
+
+const jeff = new ChachorroClasse('Jeff', 'Labrador')
+console.log(jeff)
