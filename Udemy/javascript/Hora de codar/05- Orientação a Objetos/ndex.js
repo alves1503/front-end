@@ -1,4 +1,4 @@
-// 01- METODOS
+/* // 01- METODOS
 const animal = {
     nome: 'Bob',
 
@@ -155,4 +155,21 @@ scania.descreverCaminhao()
 
     console.log(henrique.idade)
 
-    console.log(Humano.prototype.idade)
+    console.log(Humano.prototype.idade) */
+
+    //SYMBOL
+    class Aviao {
+        constructor(marcas, turbinas) {
+            this.marcas = marcas
+            this.turbinas = turbinas
+        }
+    }
+
+    const asas =  Symbol() 
+
+    Aviao.prototype[asas] = 2
+
+    const boeing = new Aviao('Boeing', 10)
+    console.log(boeing)
+
+    console.log(boeing[asas])
