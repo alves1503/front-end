@@ -157,7 +157,7 @@ scania.descreverCaminhao()
 
     console.log(Humano.prototype.idade) */
 
-//SYMBOL
+ // 12- SYMBOL
 class Aviao {
     constructor(marcas, turbinas) {
         this.marcas = marcas
@@ -175,7 +175,7 @@ console.log(boeing)
 console.log(boeing[asas])
 
 
-//GETTER E SETTER   
+// 13- GETTER E SETTER   
 class Post {
     constructor(titulo, descricao, tags) {
         this.titulo = titulo
@@ -200,3 +200,22 @@ console.log(myPost.exibirTitulo)
 myPost.adicionarTags = 'programacao, javascript, post'
 
 console.log(myPost)
+
+
+
+// 14- HERANÇA 
+class Mamifero {
+    constructor(patas) {
+        this.patas = patas
+    }
+}
+
+class Lobo extends Mamifero {
+    constructor(patas,nome) {
+        super(patas,patas)
+        this.nome = nome
+    }
+}
+
+const shark = new Lobo (4, 'Shark')
+console.log(shark)
