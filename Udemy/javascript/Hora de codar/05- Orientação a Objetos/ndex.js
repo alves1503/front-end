@@ -1,4 +1,4 @@
-/* // 01- METODOS
+// 01- METODOS
 const animal = {
     nome: 'Bob',
 
@@ -124,7 +124,7 @@ console.log(jeff)
 
 // 10- MAIS SOBRE  CLASSES
 class Caminhao {
-    constructor (eixo, cor) {
+    constructor(eixo, cor) {
         this.eixo = eixo
         this.cor = cor
     }
@@ -141,23 +141,23 @@ scania.descreverCaminhao()
 
 
 // 11- OVERRIDE
-    class Humano {
-        constructor (nome,idade) {
-            this.nome = nome
-            this.idade = idade
-        }
+class Humano {
+    constructor(nome, idade) {
+        this.nome = nome
+        this.idade = idade
     }
+}
 
-    const henrique = new Humano('Henrique', 20)
-    console.log(henrique)
+const henrique = new Humano('Henrique', 20)
+console.log(henrique)
 
-    Humano.prototype.idade = 'Não definida'
+Humano.prototype.idade = 'Não definida'
 
-    console.log(henrique.idade)
+console.log(henrique.idade)
 
-    console.log(Humano.prototype.idade) */
+console.log(Humano.prototype.idade)
 
- // 12- SYMBOL
+// 12- SYMBOL
 class Aviao {
     constructor(marcas, turbinas) {
         this.marcas = marcas
@@ -188,8 +188,8 @@ class Post {
     }
 
     set adicionarTags(tags) {
-        const tagsArray = tags.split (", ")
-        this.tags =  tagsArray
+        const tagsArray = tags.split(", ")
+        this.tags = tagsArray
     }
 }
 
@@ -211,11 +211,11 @@ class Mamifero {
 }
 
 class Lobo extends Mamifero {
-    constructor(patas,nome) {
-        super(patas,patas)
+    constructor(patas, nome) {
+        super(patas, patas)
         this.nome = nome
     }
 }
 
-const shark = new Lobo (4, 'Shark')
+const shark = new Lobo(4, 'Shark')
 console.log(shark)
