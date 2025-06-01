@@ -1,4 +1,4 @@
-/* // 1- STRICT
+// 1- STRICT
 
 'use strict'
 
@@ -38,10 +38,10 @@ debugger;
 
 for (let i = 0; i < d; i++) {
     c = c + 2
-} */
+} 
 
 
-/* // 4- TRATAMENTO DE DADOS
+// 4- TRATAMENTO DE DADOS
 function dados(n) {
 
     const result = Number(n)
@@ -64,7 +64,7 @@ let x = 10
 
 if (x != 11) {
     throw new Error("O valor de x não pode ser diferente de 11");
-} */
+} 
 
 // 6- TRY CATCH
 
