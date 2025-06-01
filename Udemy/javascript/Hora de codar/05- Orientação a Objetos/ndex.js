@@ -1,4 +1,4 @@
-// 01- METODOS
+    // 01- METODOS
 const animal = {
     nome: 'Bob',
 
