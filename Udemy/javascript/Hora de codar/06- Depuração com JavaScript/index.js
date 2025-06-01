@@ -73,3 +73,16 @@ try {
 } catch(error) {
     console.log(`Erro no programa: ${error}`)
 }
+
+// 7 -FINALY
+try {
+    const value = dados('Asd') 
+
+    if (!value) {
+        throw new Error('Valores invalidos')
+    }
+} catch (error) {
+    console.log(`Opa, aconteceu um problema: ${error}`)
+} finally {
+    console.log('O codigo foi executado')
+}
