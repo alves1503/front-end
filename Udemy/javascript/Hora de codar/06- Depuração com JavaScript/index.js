@@ -41,7 +41,7 @@ for (let i = 0; i < d; i++) {
 } */
 
 
-// 4- TRATAMENTO DE DADOS
+/* // 4- TRATAMENTO DE DADOS
 function dados(n) {
 
     const result = Number(n)
@@ -64,4 +64,12 @@ let x = 10
 
 if (x != 11) {
     throw new Error("O valor de x não pode ser diferente de 11");
+} */
+
+// 6- TRY CATCH
+
+try {
+    const soma = x + y
+} catch(error) {
+    console.log(`Erro no programa: ${error}`)
 }
