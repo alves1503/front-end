@@ -1,4 +1,4 @@
-/* // 1- SETTIMEOUT
+ // 1- SETTIMEOUT
 console.log('Ainda não foi executada');
 
 setTimeout(function(){
@@ -21,9 +21,9 @@ setInterval(function() {
 
 
 
-console.log('Ainda não foi executada 2') */
+console.log('Ainda não foi executada 2') 
 
-/* // 3- PROMISE
+// 3- PROMISE
 const promessa = Promise.resolve(5 + 5)
 
 console.log('Algum código')
@@ -60,7 +60,7 @@ const b = checkNumber(10)
 
 a.then((v) => console.log(`O resultado é ${v}`)).catch((err) =>
     console.log(`Um erro ocorreu: ${err}`)
-); */
+); 
 
 
 // 6- RESOLVENDO PROMISES
