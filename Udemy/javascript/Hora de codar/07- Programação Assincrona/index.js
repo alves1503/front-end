@@ -23,7 +23,7 @@ setInterval(function() {
 
 console.log('Ainda não foi executada 2') */
 
-// 3- PROMISE
+/* // 3- PROMISE
 const promessa = Promise.resolve(5 + 5)
 
 console.log('Algum código')
@@ -60,4 +60,24 @@ const b = checkNumber(10)
 
 a.then((v) => console.log(`O resultado é ${v}`)).catch((err) =>
     console.log(`Um erro ocorreu: ${err}`)
-);
+); */
+
+
+// 6- RESOLVENDO PROMISES
+const p1 = new Promise((resolve, reject) => {
+    setTimeout(function () {
+        resolve(10)
+    }, 1000)
+})
+
+const p2 = Promise.resolve(10 + 10)
+
+const p3 = new Promise((resolve, reject) => {
+    if (30 > 10) {
+        resolve(30)
+    } else {
+        reject("Error!")
+    }
+})
+
+Promise.all([p1,p2,p3]).then((values) => console.log(values))
