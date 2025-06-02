@@ -1,4 +1,4 @@
-// 1- SETTIMEOUT
+/* // 1- SETTIMEOUT
 console.log('Ainda não foi executada');
 
 setTimeout(function(){
@@ -21,4 +21,15 @@ setInterval(function() {
 
 
 
-console.log('Ainda não foi executada 2')
+console.log('Ainda não foi executada 2') */
+
+// 3- PROMISE
+const promessa = Promise.resolve(5 + 5) 
+
+console.log('Algum código')
+
+promessa.then((value) => {
+    console.log(`A soma é ${value}`)
+})
+
+console.log('Outro código')
