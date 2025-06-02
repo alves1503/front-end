@@ -33,3 +33,13 @@ promessa.then((value) => {
 })
 
 console.log('Outro código')
+
+
+// 4- FALHA NA PROMISE
+Promise.resolve(4 * 'asd')
+.then((n) => {
+    if(Number.isNaN(n)) {
+        throw new Error('VAlores invalidos')
+    }
+})
+.catch((err) => console.log(`Um erro ocorreu: ${err}`))
