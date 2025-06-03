@@ -1,7 +1,7 @@
- // 1- SETTIMEOUT
+// 1- SETTIMEOUT
 console.log('Ainda não foi executada');
 
-setTimeout(function(){
+setTimeout(function () {
 
     console.log('Executado!')
 
@@ -15,13 +15,13 @@ console.log('Ainda não foi executada 2')
 console.log('Ainda não foi executada')
 
 
-setInterval(function() {
+setInterval(function () {
     console.log('Intervalo assincrono')
-},2000)
+}, 2000)
 
 
 
-console.log('Ainda não foi executada 2') 
+console.log('Ainda não foi executada 2')
 
 // 3- PROMISE
 const promessa = Promise.resolve(5 + 5)
@@ -60,7 +60,7 @@ const b = checkNumber(10)
 
 a.then((v) => console.log(`O resultado é ${v}`)).catch((err) =>
     console.log(`Um erro ocorreu: ${err}`)
-); 
+);
 
 
 // 6- RESOLVENDO PROMISES
@@ -80,31 +80,31 @@ const p3 = new Promise((resolve, reject) => {
     }
 })
 
-Promise.all([p1,p2,p3]).then((values) => console.log(values))
+Promise.all([p1, p2, p3]).then((values) => console.log(values))
 
 
 // 7- ASYNC FUNCTIONS
-async function somarComDelay(a,b) {
+async function somarComDelay(a, b) {
     return a + b
 }
 
-somarComDelay(2,4).then((value) => {
+somarComDelay(2, 4).then((value) => {
     console.log(`O valor da soma é: ${value}`)
 })
 
 console.log('Teste asnc')
 
 // 8 -ASYNC AWAIIT
-function resolveComDelay(){
+function resolveComDelay() {
     return new Promise((resolve) => {
         setTimeout(() => {
             resolve('Resolveu a promise')
-        },2000)
+        }, 2000)
     })
 }
 
 async function chamadaAsync() {
-    console.log('Chamando a promise, e esperando o resultado') 
+    console.log('Chamando a promise, e esperando o resultado')
     const result = await resolveComDelay()
     console.log(`O resultado chegou: ${result}`)
 }
