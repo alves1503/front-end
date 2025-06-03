@@ -6,3 +6,8 @@ console.log(listItem)
 // 03- SELECIONANDO ELEMENTOS POR ID
 const titulo = document.getElementById('title')
 console.log(titulo)
+
+
+// 04- SELECIONANDO ELEMENTOS POR CLASSES
+const navegacao = document.getElementsByClassName('nav')
+console.log(navegacao)
