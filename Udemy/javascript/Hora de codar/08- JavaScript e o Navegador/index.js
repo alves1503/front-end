@@ -31,14 +31,32 @@ header.insertBefore(p, titulo)
 
 
 // 07- APPENDCHILD
-const navLinks = document.querySelector('nav') 
+const navLinks = document.querySelector('nav')
 
 const li = document.createElement('li')
 
 navLinks.appendChild(li)
 
 // 08- REPLACECHILD
-    const h2 = document.createElement('h2')
+const h2 = document.createElement('h2')
 
-    h2.textContent = 'Meu novo texto!'
-    header.replaceChild(h2, titulo)
+h2.textContent = 'Meu novo texto!'
+header.replaceChild(h2, titulo)
+
+
+// 09- CREATETEXTNODE
+// Criamos um nó de texto
+const myText = document.createTextNode('Agora vamos colocar mais um título');
+
+// Criamos um novo elemento <h3>
+const h3 = document.createElement('h3');
+
+// Colocamos o nó de texto dentro do <h3>
+h3.appendChild(myText);
+
+// Exibimos o <h3> no console para ver como ficou
+console.log(h3);
+
+// Finalmente, adicionamos o <h3> ao elemento <main>
+const main = document.querySelector('main');
+main.appendChild(h3);
