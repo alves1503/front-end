@@ -60,3 +60,17 @@ console.log(h3);
 // Finalmente, adicionamos o <h3> ao elemento <main>
 const main = document.querySelector('main');
 main.appendChild(h3);
+
+
+// 10- TRABALHANDO COM ATRIBUTOS
+// Pegamos o primeiro <a> dentro do <nav>
+const firstLink = navLinks.querySelector('a')
+
+// Mostramos o primeiro link no console
+console.log(firstLink)
+
+// Mudamos o destino do link
+firstLink.setAttribute(
+    'href',
+    'https://www.udemy.com/course/formacao-front-end-html-css-javascript-react-e/learn/lecture/38440944?start=15#overview'
+)
