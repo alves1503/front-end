@@ -11,3 +11,8 @@ console.log(titulo)
 // 04- SELECIONANDO ELEMENTOS POR CLASSES
 const navegacao = document.getElementsByClassName('nav')
 console.log(navegacao)
+
+
+// 05- SELECIONANDO ELEMENTOS POR QUERY SELECTOR
+const navegacao2 = document.querySelectorAll('.nav')
+console.log(navegacao2)
