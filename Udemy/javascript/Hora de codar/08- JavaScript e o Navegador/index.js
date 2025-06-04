@@ -28,3 +28,11 @@ const header = titulo.parentElement
 
 // Agora, colocamos o novo parágrafo <p> dentro do "header" (caixa) antes do título "titulo".
 header.insertBefore(p, titulo)
+
+
+// 07- APPENDCHILD
+const navLinks = document.querySelector('nav') 
+
+const li = document.createElement('li')
+
+navLinks.appendChild(li)
