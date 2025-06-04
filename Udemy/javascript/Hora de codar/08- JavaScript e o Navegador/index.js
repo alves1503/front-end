@@ -36,3 +36,9 @@ const navLinks = document.querySelector('nav')
 const li = document.createElement('li')
 
 navLinks.appendChild(li)
+
+// 08- REPLACECHILD
+    const h2 = document.createElement('h2')
+
+    h2.textContent = 'Meu novo texto!'
+    header.replaceChild(h2, titulo)
