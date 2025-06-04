@@ -74,3 +74,14 @@ firstLink.setAttribute(
     'href',
     'https://www.udemy.com/course/formacao-front-end-html-css-javascript-react-e/learn/lecture/38440944?start=15#overview'
 )
+
+
+// 11- ALTURA E LARGURA
+    const footer = document.querySelector('footer')
+
+    console.log(footer.offsetWidth)
+    console.log(footer.offsetHeight)
+
+
+    // 12- ALTERANDO ESTILOS
+    main.style.color = 'red'
