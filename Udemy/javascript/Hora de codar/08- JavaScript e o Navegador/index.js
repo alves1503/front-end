@@ -85,3 +85,8 @@ firstLink.setAttribute(
 
     // 12- ALTERANDO ESTILOS
     main.style.color = 'red'
+
+    // 13- ALTERANDO ESTILOS DE VARIOS ELEMENTOS
+    for (const li of listItem) {
+        li.style.backgroundColor = 'blue'
+    }
