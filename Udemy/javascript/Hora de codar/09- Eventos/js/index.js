@@ -24,3 +24,15 @@ thirdButton.addEventListener('click', () => {
     console.log('Evento removido')
     secondButton.removeEventListener('click', imprimiButton)
 })
+
+
+// 03- Argumento do evento
+const myTitle = document.querySelector('#myTitle')
+
+myTitle.addEventListener('click', (event) => {
+    console.log(event)
+    console.log(event.srcElement)
+    console.log(event.offsetX)
+    console.log(event.pointerType)
+    console.log(event.target)
+})
