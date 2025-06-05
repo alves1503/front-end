@@ -49,3 +49,13 @@ divButton.addEventListener('click', () => {
 insideButton.addEventListener('click', () => {
     console.log('Evento 2')
 })
+
+
+// 05- REMOVENDO EVENTO PADRÃO
+const a = document.querySelector('a')
+
+a.addEventListener('click', (e) => {
+    e.preventDefault()
+
+    console.log('Não alterou a pagina')
+})
