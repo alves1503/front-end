@@ -59,3 +59,14 @@ a.addEventListener('click', (e) => {
 
     console.log('Não alterou a pagina')
 })
+
+
+
+// 06- EVENTOS DE TECLA
+document.addEventListener('keyup', (e) => {
+    console.log(`Soltou a tecla ${e.key}`)
+})
+
+document.addEventListener('keydown', (e) => {
+    console.log(`Soltou a tecla ${e.key}`)
+})
