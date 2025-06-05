@@ -98,7 +98,24 @@ document.addEventListener('mousemove', (e) => {
 
 // 09- EVENTO DE SCROLL
 window.addEventListener('scroll', (e) => {
-    if(window.pageXOffset > 100) {
+    if (window.pageXOffset > 100) {
         console.log('Passamos de 200px')
     }
+})
+
+
+// 10- EVENTO DE FOCUS
+const inputFocus = document.querySelector('#myInput')
+
+inputFocus.addEventListener('focus', (e) => {
+
+    console.log('Entrou no input')
+
+})
+
+
+inputFocus.addEventListener('blur', (e) => {
+
+    console.log('Saiu no input')
+
 })
