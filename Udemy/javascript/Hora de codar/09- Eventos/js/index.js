@@ -18,7 +18,7 @@ secondButton.addEventListener('click', imprimiButton)
 
 // Outro botão //
 
-const thirdButton = document.querySelector('#otherBtn') 
+const thirdButton = document.querySelector('#otherBtn')
 
 thirdButton.addEventListener('click', () => {
     console.log('Evento removido')
@@ -86,4 +86,11 @@ eventMouse.addEventListener('mouseup', () => {
 
 eventMouse.addEventListener('dblclick', () => {
     console.log('Click 2x o botão')
+})
+
+
+// 08- MOVIMENTO DE MOUSE 
+document.addEventListener('mousemove', (e) => {
+    console.log(`No eixo X: ${e.x}`)
+    console.log(`No eixo Y: ${e.y}`)
 })
