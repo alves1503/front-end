@@ -89,8 +89,16 @@ eventMouse.addEventListener('dblclick', () => {
 })
 
 
-// 08- MOVIMENTO DE MOUSE 
+/* // 08- MOVIMENTO DE MOUSE 
 document.addEventListener('mousemove', (e) => {
     console.log(`No eixo X: ${e.x}`)
     console.log(`No eixo Y: ${e.y}`)
+}) */
+
+
+// 09- EVENTO DE SCROLL
+window.addEventListener('scroll', (e) => {
+    if(window.pageXOffset > 100) {
+        console.log('Passamos de 200px')
+    }
 })
