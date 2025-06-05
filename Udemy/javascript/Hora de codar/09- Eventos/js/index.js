@@ -36,3 +36,16 @@ myTitle.addEventListener('click', (event) => {
     console.log(event.pointerType)
     console.log(event.target)
 })
+
+
+// 04- PROPAGAÇÃO
+const divButton = document.querySelector('#btnContainer')
+const insideButton = document.querySelector('#container')
+
+divButton.addEventListener('click', () => {
+    console.log('Evento 1')
+})
+
+insideButton.addEventListener('click', () => {
+    console.log('Evento 2')
+})
