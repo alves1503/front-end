@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+}
+
+.logo>img {
+    padding: 10px;
+}
+
+.pesquisa {
+    display: flex;
+    padding: 20px;
+}
+
+.pesquisa input {
+    border: 1px solid black;
+}
+
+.pesquisa>img {
+    background-color: #CCCCCC;
+    border: 1px solid black;
+}
+
+.outras-info>img {
+    padding: 10px;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    gap: 100px;
+
+}
+
+.inicio-youtube {
+    padding: 10px;
+    width: 50%;
+
+}
+
+.inicio-youtube h2 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.info {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.chanel {
+    display: flex;
+    gap: 10px;
+}
+
+.chanel p {
+    color: #515151;
+}
+
+.info>button {
+    border: none;
+    width: 159px;
+    height: 40px;
+    border-radius: 2px;
+    background-color: red;
+    color: white;
+}
+
+.conteudo {
+    display: flex;
+    gap: 20px;
+}
+
+.icon-conteudo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.inicio-youtube h4 {
+    margin: 20px 0;
+}
+
+.inicio-youtube>p {
+    color: #515151;
+    font-size: 14px;
+    width: 70%;
+    text-align: justify;
+}
+
+.segunda-secao-youtube {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+}
+
+.cont-secao {
+    display: flex;
+}
+
+.extra {
+    margin: 0 10px;
+}
+
+.cont-secao p {
+    color: #515151;
+}
