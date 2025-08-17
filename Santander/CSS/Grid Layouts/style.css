@@ -1,39 +1,16 @@
 .container {
-    background-color: rgb(62, 62, 62);
+    border: 2px solid black;
     display: grid;
-    padding: 10px;
-    border: 1px solid black;
-
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 300px 200px;
+     grid-template-columns: repeat(2, 1fr) 4fr repeat(2, 1fr);
+    grid-template-rows: 50px  100px 200px;
 }
 
-.item-1 {
-    background-color: rgb(255, 0, 0);
-    border: 1px solid black;
-}
+.item-b {
+    text-align: center;
+    background-color: cadetblue;
+    grid-column-start: 2;
+    grid-column-end: 5;
 
-.item-2 {
-    background-color: rgb(64, 0, 255);
-    border: 1px solid black;
-}
-
-.item-3 {
-    background-color: rgb(0, 255, 64);
-    border: 1px solid black;
-}
-
-.item-4 {
-    background-color: rgb(183, 255, 0);
-    border: 1px solid black;
-}
-
-.item-5 {
-    background-color: rgb(255, 0, 225);
-    border: 1px solid black;
-}
-
-.item-6 {
-    background-color: rgb(93, 0, 255);
-    border: 1px solid black;
+    grid-row-start: 1;
+    grid-row-end: 3;
 }
