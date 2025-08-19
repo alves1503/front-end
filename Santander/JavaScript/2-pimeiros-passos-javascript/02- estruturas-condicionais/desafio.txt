@@ -1,0 +1,9 @@
+faça um programa para calcular o valor de uma viagem
+
+3 variaves
+
+1- Preço do etanol
+2- Preço da gasolina
+3- O tipo de combustivel do seu carro
+4- Gasto medio do combustibvel do carro por km
+5- Distancia em KM por viagem
