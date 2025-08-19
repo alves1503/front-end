@@ -1,0 +1,7 @@
+faça um programa para calcular o valor de uma viagem
+
+3 variaves
+
+1- Preço do combustivel
+2- Gasto medio de combustivel por km
+3- Distancia em Km por viagem
