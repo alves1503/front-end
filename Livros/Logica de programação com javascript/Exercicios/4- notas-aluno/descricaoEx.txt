@@ -1,0 +1,7 @@
+Elaborar um programa que leia 2 nota d eum aluno em ua disciplin. Calculee informe a media das noteas
+
+Exemplo:
+
+1° Nota: 7,0
+2° Nota : 8,0
+Media: 7,5
