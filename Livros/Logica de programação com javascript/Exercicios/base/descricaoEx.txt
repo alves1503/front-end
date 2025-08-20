@@ -1,1 +1,0 @@
-Elaborar um programa que leia um numero. Calcule e infome os seus vizinhos, ou seja o numero anterior e posterior

@@ -1,0 +1,6 @@
+Elaborar um programa para uma pizzaria , o qual leia o total de uma conta e quantos clientes vao aga. Calcule e informe o valor a ser pago por clientes
+
+Exemplo:
+Valor da conta: R$90,00
+Bumero de clientes: 3
+Valor por cliente: 30
