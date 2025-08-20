@@ -1,0 +1,7 @@
+Elaborar um programa para uma loja, o qual leia o preço de um produto e informe a opções de pagamento da loj. Calcule e informe o valor para pagamento a vista com 10% de desconto e  o valor em 3 vezes
+
+Exemplo:
+
+Preço: 60,00 R$
+A visa: 54,00 R$
+ou 3X = 20,00R$
