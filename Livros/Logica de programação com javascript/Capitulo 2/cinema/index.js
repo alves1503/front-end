@@ -14,4 +14,6 @@ form.addEventListener("submit", (e) => {
   resDuracao.innerText = `${horas} Hora(s) e ${minutos}(min)`;
 
     
+
+    0
 });
