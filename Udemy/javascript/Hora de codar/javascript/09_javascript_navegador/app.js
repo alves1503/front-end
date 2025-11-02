@@ -36,6 +36,7 @@ const li = document.createElement("li");
 
 navLinks.appendChild(li);
 
+
 // 08- ReplaceChild
 const h2 = document.createElement("h2");
 h2.textContent = "Meu novo titulo";

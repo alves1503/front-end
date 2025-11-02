@@ -1,0 +1,81 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: radial-gradient(
+    circle,
+    rgba(22, 98, 128, 1) 0%,
+    rgba(36, 83, 110, 1) 54%,
+    rgba(48, 114, 140, 1) 100%
+  );
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  width: 20%;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.form-conteudo {
+  gap: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.numero {
+  display: flex;
+  flex-direction: column;
+}
+
+.multiplicador {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 10px;
+  background: none;
+  border: 2px solid black;
+  width: 2rem;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+button {
+  border: none;
+  padding: 10px;
+  width: 70%;
+  margin: auto;
+  background-color: rgb(10, 10, 10);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.container {
+    background-color: white;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+     width: 20%;
+     margin: auto;
+     padding: 20px;
+     border-radius: 20px;
+}
