@@ -1,0 +1,85 @@
+:root {
+  --fundo: #000;
+  --texto: #fff;
+  --textoForte: #8400ff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  background-color: var(--fundo);
+  color: var(--texto);
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+img {
+  height: 150px;
+  border-radius: 50%;
+}
+
+strong {
+  color: var(--textoForte);
+  font-weight: bold;
+}
+
+.header-container {
+  font-size: 1.5rem;
+}
+
+main {
+  margin-top: 20px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contato {
+  width: 300px;
+  margin-top: 30px;
+  margin: 0 auto;
+}
+
+.contato h3 {
+  margin-top: 20px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.4rem;
+}
+
+.form-conteudo {
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+.form-conteudo input {
+  margin: 5px;
+  padding: 8px;
+  border: 1px solid var(--texto);
+  background: none;
+  border-radius: 10px;
+}
+
+button {
+  background-color: green;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100px;
+  cursor: pointer;
+}
