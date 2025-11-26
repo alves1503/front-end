@@ -1,0 +1,7 @@
+.class {
+    color: hsl(hue, saturation, lightness); /*RGBA COR*/
+}
+
+#id {
+   color: hsl(hue, saturation, lightness); /*RGBA COR*/
+}
