@@ -1,0 +1,13 @@
+body {
+    color: rgb(0, 0, 0);
+}
+
+.container {
+
+    display: inline-flex;
+}
+
+p {
+    display: none;
+    position: fixed;
+}
