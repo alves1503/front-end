@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input radio</title>
+
+    <style>
+        body {
+            padding-bottom: 500px;
+        }
+
+        div {
+            margin-bottom: 10px;
+        }
+
+        div input,
+        div label {
+
+            display: block;
+        }
+
+        .radio label, .radio input {
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <h1>Formularios HTML</h1>
+        <label for="radio">Escolha o modelo do seu carro:</label>
+        <div class="radio">
+            <input type="radio" value="bmw" name="car_model" >
+            <label for="bmw">BMW</label>
+        </div>
+
+         <div class="radio">
+            <input type="radio" value="fer" name="car_model" >
+            <label for="fer">Ferrari</label>
+        </div>
+    </form>
+
+</body>
+
+</html>
