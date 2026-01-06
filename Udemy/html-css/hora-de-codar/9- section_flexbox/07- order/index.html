@@ -1,0 +1,43 @@
+    <!DOCTYPE html>
+    <html lang="pt-Br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Trabalhando com order</title>
+
+        <style>
+        .container {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            background-color: aqua;
+            margin-bottom: 10px;
+        }
+
+        .four {
+            order: 1;
+        }
+
+        .three {
+            order: 2;
+        }
+
+        .two {
+            order: 3;
+        }
+
+        .one {
+            order: 4;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <p class="one">Meu primeiro elemento,</p>
+        <p class="two">Meu Segundo elemento,</p>
+        <p class="three">Meu Terceiro elemento,</p>
+        <p class="four">Meu Quarto elemento</p>
+        </div>
+    </body>
+    </html>
